@@ -1,0 +1,47 @@
+/*IMPORTANT*/
+#container{
+   background: #fff; /*sets the base colour for the contrast*/
+   -webkit-filter: contrast(30);
+   filter: contrast(30);
+  /*the contrast effect is not applied outside of the container and becomes just a blur*/
+}
+#container div{
+  background: #000;
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+
+
+
+
+/* UNIMPORTANT */
+body{
+  padding: 2em;
+  text-align: center;
+}
+p{
+  font-size: 2em;
+  margin: 1em 0;
+}
+#container{
+     border: 1px solid #000;
+     position: relative;
+     height: 70vh; 
+}
+#container div{
+border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: 60px;
+  left: 0;
+  position: absolute;
+}
+#container div:nth-of-type(1){
+  left: 100px;
+}
+#container div:nth-of-type(2){
+  left: 200px;
+}
+#container div:nth-of-type(3){
+  left: 400px;
+}
